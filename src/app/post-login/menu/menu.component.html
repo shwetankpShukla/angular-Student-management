@@ -1,0 +1,50 @@
+<mat-nav-list>
+
+    <button mat-button class="menu-button">
+        <mat-icon routerLinkActive="active-icon">home</mat-icon>
+        <a [routerLink]="['/welcome']">
+            Welcome
+          </a>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button">
+        <mat-icon routerLinkActive="active-icon">person_pin</mat-icon>
+        <a [routerLink]="['/student']">
+            Student
+          </a>
+    </button>
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button">
+        <mat-icon routerLinkActive="active-icon">person</mat-icon>
+        <span class="ml-2"> Profile</span>
+    </button>
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button">
+        <mat-icon routerLinkActive="active-icon">info</mat-icon>
+        <span class="ml-2"> About</span>
+    </button>
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button">
+        <mat-icon routerLinkActive="active-icon">help_outline</mat-icon>
+        <span class="ml-2"> Help</span>
+    </button>
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button">
+        <mat-icon routerLinkActive="active-icon">settings</mat-icon>
+        <span class="ml-2"> Settings</span>
+    </button>
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button">
+        <mat-icon routerLinkActive="active-icon">logout</mat-icon>
+        <span class="ml-2"> Logout</span>
+    </button>
+    <mat-divider></mat-divider>
+
+</mat-nav-list>

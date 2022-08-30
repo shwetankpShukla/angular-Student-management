@@ -1,0 +1,25 @@
+<div>
+  <div>
+    <app-header></app-header>
+  </div>
+  <div>
+    <form [formGroup]="loginForm">
+      <div>
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="UserId" formControlName="uid">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Enter Password" formControlName="pwd" required>
+      </mat-form-field>
+    </div>
+    <div>
+      <button mat-raised-button color="primary" (click)="login()">Login</button>
+    </div>
+
+    </form>
+  </div>
+  <div>
+    <app-footer></app-footer>
+  </div>
+</div>
