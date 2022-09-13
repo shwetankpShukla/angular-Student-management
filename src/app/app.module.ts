@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FlexLayoutModule } from '@angular/flex-layout'
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { RouterModule } from '@angular/router';
     PreLoginModule,
     PostLoginModule,
     FlexLayoutModule,
+    HttpClientModule,
     RouterModule.forRoot([])
   ],
   exports: [

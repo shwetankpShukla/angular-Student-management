@@ -1,1 +1,67 @@
-<p>list-student works!</p>
+<div class="container" fxLayout="row">
+    <div class="sub-section-1" fxFlex="20">
+`           
+    </div>
+
+
+    <div fxLayout="column" fxFlex="80" >
+        <div class="child-1">
+            <button mat-raised-button color="primary" (click)="addStudent()">Add Student</button>
+
+        </div>
+        <div class="child-2">
+            <table mat-table [dataSource]="studentList" class="mat-elevation-z8" class="student-table">
+
+                <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef> Name </th>
+                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="address">
+                    <th mat-header-cell *matHeaderCellDef> Address </th>
+                    <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="email">
+                    <th mat-header-cell *matHeaderCellDef> Email </th>
+                    <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="state">
+                    <th mat-header-cell *matHeaderCellDef> State </th>
+                    <td mat-cell *matCellDef="let element"> {{element.state}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="dob">
+                    <th mat-header-cell *matHeaderCellDef> Date of Birth </th>
+                    <td mat-cell *matCellDef="let element"> {{element.dateCreated | date}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="action">
+                    <th mat-header-cell *matHeaderCellDef> Action </th>
+                    <td mat-cell *matCellDef="let element">
+                        <span>
+                            <button mat-button color="primary" (click)="deleteStudent(element.id,element.name)">Delete</button>
+                        </span>
+                        <span>
+                            <button mat-button color="primary" (click)="editStudent(element)">Edit</button>
+                        </span>
+                        <span>
+                            <button mat-button color="primary" (click)="viewStudent(element.id)">View</button>
+                        </span>
+                    </td>
+                </ng-container>
+                
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>

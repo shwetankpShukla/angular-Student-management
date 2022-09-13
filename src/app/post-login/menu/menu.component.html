@@ -2,7 +2,7 @@
 
     <button mat-button class="menu-button">
         <mat-icon routerLinkActive="active-icon">home</mat-icon>
-        <a [routerLink]="['/welcome']">
+        <a [routerLink]="['/dashboard/welcome']">
             Welcome
           </a>
     </button>
@@ -11,7 +11,7 @@
 
     <button mat-button class="menu-button">
         <mat-icon routerLinkActive="active-icon">person_pin</mat-icon>
-        <a [routerLink]="['/student']">
+        <a [routerLink]="['/dashboard/student']">
             Student
           </a>
     </button>
@@ -19,31 +19,42 @@
 
     <button mat-button class="menu-button">
         <mat-icon routerLinkActive="active-icon">person</mat-icon>
-        <span class="ml-2"> Profile</span>
+        <a [routerLink]="['/dashboard/profile']">
+            Profile
+          </a>
     </button>
     <mat-divider></mat-divider>
 
     <button mat-button class="menu-button">
         <mat-icon routerLinkActive="active-icon">info</mat-icon>
-        <span class="ml-2"> About</span>
+        <a [routerLink]="['/dashboard/about']">
+            About
+          </a>
+       
     </button>
     <mat-divider></mat-divider>
 
     <button mat-button class="menu-button">
         <mat-icon routerLinkActive="active-icon">help_outline</mat-icon>
-        <span class="ml-2"> Help</span>
+        <a [routerLink]="['/dashboard/help']">
+            Help
+          </a>
     </button>
     <mat-divider></mat-divider>
 
     <button mat-button class="menu-button">
         <mat-icon routerLinkActive="active-icon">settings</mat-icon>
-        <span class="ml-2"> Settings</span>
+        <a [routerLink]="['/dashboard/setting']">
+            Setting
+          </a>
     </button>
     <mat-divider></mat-divider>
-
+    
     <button mat-button class="menu-button">
-        <mat-icon routerLinkActive="active-icon">logout</mat-icon>
-        <span class="ml-2"> Logout</span>
+        <mat-icon routerLinkActive="active-icon">inbox</mat-icon>
+        <a [routerLink]="['/dashboard/inbox']">
+           inbox
+          </a>
     </button>
     <mat-divider></mat-divider>
 

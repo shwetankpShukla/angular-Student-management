@@ -5,4 +5,7 @@ export const CREDENTIALS = [
     {userId: 'kalyan', password: 'hello@123'},
     {userId: 'naveen', password: 'hello@123'}
 ]
+
+
+export const baseURL="http://localhost:8080/api/v1/"
     

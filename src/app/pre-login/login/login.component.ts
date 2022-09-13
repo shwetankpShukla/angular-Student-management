@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
         user.password == this.loginForm.value.pwd
       );
       if (cred) {
-        this.router.navigate(['dashboard']);
+        this.router.navigate(['dashboard/welcome']);
       }
     }
   }

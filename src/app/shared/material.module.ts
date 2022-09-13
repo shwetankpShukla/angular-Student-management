@@ -10,6 +10,9 @@ import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 
+import {MatTableModule} from '@angular/material/table';
+import {MatSelectModule} from '@angular/material/select';
+
 
 @NgModule({
   declarations: [],
@@ -24,7 +27,9 @@ import {MatMenuModule} from '@angular/material/menu';
     MatSidenavModule,
     MatListModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule,
+    MatSelectModule
   ],
   exports: [
    // BrowserAnimationsModule,
@@ -36,7 +41,9 @@ import {MatMenuModule} from '@angular/material/menu';
     MatSidenavModule,
     MatListModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule,
+    MatSelectModule
   ]
 })
 export class MaterialModule { }

@@ -13,6 +13,9 @@ import { WelcomeComponent } from './static/welcome/welcome.component';
 import { ProfileComponent } from './static/profile/profile.component';
 import { AboutComponent } from './static/about/about.component';
 import { RouterModule } from '@angular/router';
+import { SettingComponent } from './static/setting/setting.component';
+import { StudentHelpComponent } from './static/student-help/student-help.component';
+import { InboxComponent } from './static/inbox/inbox.component';
 
 
 
@@ -27,7 +30,10 @@ import { RouterModule } from '@angular/router';
     ViewStudentComponent,
     WelcomeComponent,
     ProfileComponent,
-    AboutComponent
+    AboutComponent,
+    SettingComponent,
+    StudentHelpComponent,
+    InboxComponent
   ],
   imports: [
     CommonModule,

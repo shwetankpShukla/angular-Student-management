@@ -1,0 +1,55 @@
+<div class="container">
+    <form [formGroup]="contactUsForm">
+
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input matInput placeholder="First Name" formControlName="firstName">
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput placeholder="Last Name" formControlName="lastName">
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>E-mail</mat-label>
+                <input matInput placeholder="Email" formControlName="email">
+                <mat-hint>shwetank@gmail.com</mat-hint>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Contact No.</mat-label>
+                <input matInput placeholder="Contact No" formControlName="mobile">
+                <mat-hint>9918303218</mat-hint>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-select placeholder="Select State" formControlName="state">
+                    <mat-option value="1">Uttar Pradesh</mat-option>
+                    <mat-option value="2">Tamil Nadu</mat-option>
+                    <mat-option value="3">Madhya Pradesh</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Subject</mat-label>
+                <textarea matInput placeholder="Write something..." formControlName="subject"></textarea>
+            </mat-form-field>
+        </p>
+        <p>
+            <button mat-raised-button color="primary" (click)="submit()">Submit</button>
+        </p>
+
+    </form>
+</div>
