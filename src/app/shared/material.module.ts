@@ -12,6 +12,7 @@ import {MatMenuModule} from '@angular/material/menu';
 
 import {MatTableModule} from '@angular/material/table';
 import {MatSelectModule} from '@angular/material/select';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import {MatSelectModule} from '@angular/material/select';
   imports: [
     CommonModule,
    // BrowserAnimationsModule,
+    FlexLayoutModule,
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
@@ -35,6 +37,7 @@ import {MatSelectModule} from '@angular/material/select';
    // BrowserAnimationsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
+    FlexLayoutModule,
     MatInputModule,
     MatButtonModule,
     MatToolbarModule,

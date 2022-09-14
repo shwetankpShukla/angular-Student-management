@@ -16,6 +16,6 @@ export class StudentService{
 
     createStudent(formData: any) {
         return this.http.post('http://localhost:8080/api/v1/student/',formData);
-      }
+    }
 
 }

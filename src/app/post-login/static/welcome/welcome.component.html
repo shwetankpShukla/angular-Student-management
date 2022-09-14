@@ -2,12 +2,25 @@
     <div>
       <p>Welcome Page</p>
     </div>
-    <div>
-      <h1>COMING SOON</h1>
-      <hr>
-      <p>235 days</p>
-    </div>
-    <div>
-      <p>Page is down for maintenance</p>
+    <div >
+      <form [formGroup]="countryForm">
+        <mat-form-field >
+        <mat-label> Select Country</mat-label>
+        <mat-select formControlName="country" (selectionChange)="onChangeCountry()">
+          <mat-option *ngFor="let country of COUNTRYIES" [value]="country.code">
+            {{ country.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+       <mat-form-field >
+        <mat-label> Select State</mat-label>
+        <mat-select formControlName="state">
+          <mat-option *ngFor="let state of states" [value]="state">
+            {{ state }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field> 
+      </form>
     </div>
   </div>

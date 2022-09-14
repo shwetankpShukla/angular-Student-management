@@ -1,61 +1,20 @@
+
 <mat-nav-list>
 
-    <button mat-button class="menu-button">
-        <mat-icon routerLinkActive="active-icon">home</mat-icon>
-        <a [routerLink]="['/dashboard/welcome']">
-            Welcome
-          </a>
-    </button>
 
-    <mat-divider></mat-divider>
-
-    <button mat-button class="menu-button">
-        <mat-icon routerLinkActive="active-icon">person_pin</mat-icon>
-        <a [routerLink]="['/dashboard/student']">
-            Student
-          </a>
-    </button>
-    <mat-divider></mat-divider>
-
-    <button mat-button class="menu-button">
-        <mat-icon routerLinkActive="active-icon">person</mat-icon>
-        <a [routerLink]="['/dashboard/profile']">
-            Profile
-          </a>
-    </button>
-    <mat-divider></mat-divider>
-
-    <button mat-button class="menu-button">
-        <mat-icon routerLinkActive="active-icon">info</mat-icon>
-        <a [routerLink]="['/dashboard/about']">
-            About
-          </a>
-       
-    </button>
-    <mat-divider></mat-divider>
-
-    <button mat-button class="menu-button">
-        <mat-icon routerLinkActive="active-icon">help_outline</mat-icon>
-        <a [routerLink]="['/dashboard/help']">
-            Help
-          </a>
-    </button>
-    <mat-divider></mat-divider>
-
-    <button mat-button class="menu-button">
-        <mat-icon routerLinkActive="active-icon">settings</mat-icon>
-        <a [routerLink]="['/dashboard/setting']">
-            Setting
-          </a>
-    </button>
-    <mat-divider></mat-divider>
     
-    <button mat-button class="menu-button">
-        <mat-icon routerLinkActive="active-icon">inbox</mat-icon>
-        <a [routerLink]="['/dashboard/inbox']">
-           inbox
-          </a>
-    </button>
+    <div *ngFor="let menu of menuList" class="menu_div">
+
+        <span class="mat-list-item-content">
+            <mat-icon routerLinkActive="active-icon">{{menu.menuImg}}</mat-icon>
+            <a [routerLink]="[menu.menuUrl]">
+                {{menu.menuName}}
+            </a>
+        </span>
+        <mat-divider></mat-divider>
+    </div>
+    
+
     <mat-divider></mat-divider>
 
 </mat-nav-list>
