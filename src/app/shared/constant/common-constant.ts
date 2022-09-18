@@ -53,5 +53,8 @@ export const STATEBYCOUNTRY = [
     }
 ]
 
-
+// https://github.com/shwetankpShukla/angular-app-support-application.git
 export const baseURL = "http://localhost:8080/api/v1/"
+
+//https://github.com/shwetankpShukla/spring-security.git
+export const baseSCURL = "http://localhost:9090/api/"

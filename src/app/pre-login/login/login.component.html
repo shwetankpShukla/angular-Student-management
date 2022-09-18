@@ -1,25 +1,59 @@
-<div>
-  <div>
+<div div fxLayout="column" fxLayoutAlign="space-around center">
+  <!-- main div div -->
+  <div class="prelogin-header">
+    <!-- header div -->
     <app-header></app-header>
   </div>
-  <div>
-    <form [formGroup]="loginForm">
-      <div>
-      <mat-form-field appearance="outline">
-        <input matInput placeholder="UserId" formControlName="uid">
-      </mat-form-field>
+  <div fxLayout="row" fxLayoutAlign="start center" class="centre-img" > <!-- centre div -->
+     
 
-      <mat-form-field appearance="outline">
-        <input matInput placeholder="Enter Password" formControlName="pwd" required>
-      </mat-form-field>
+    <div  class="centre-left-div "> <!--centre left div -->
+      
     </div>
-    <div>
-      <button mat-raised-button color="primary" (click)="login()">Login</button>
-    </div>
+    <div class="content"><!--centre Right div -->
+      <form [formGroup]="loginForm" >
+        <div>
+          <img src="../../../assets/image/profile.png" alt="image" class="avatar" >
+        </div>
+        <div>
+          <mat-form-field appearance="outline">
+            <input matInput placeholder="UserId" formControlName="uid">
+            <mat-error *ngIf="loginForm.controls['uid'].errors?.['required']">user Name is mandotry</mat-error>
+            <mat-error *ngIf="loginForm.controls['uid'].errors?.['minlength']">Min length is 4</mat-error>
+          </mat-form-field>
+        </div>
+        <div >
+          <mat-form-field appearance="outline">
+            <input matInput placeholder="Enter Password" type="password" formControlName="pwd" required>
+            
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="fill">
+            <mat-label>Select Login option</mat-label>
+            <mat-select [(value)]="selected">
+              <mat-option value="OP1">Login with Stub data</mat-option>
+              <mat-option value="OP2">Login with Normal AUTH</mat-option>  
+              <mat-option value="OP3">Login with secure AUTH</mat-option>                          
+            </mat-select>
+          </mat-form-field>
+          
+          <p>You selected: {{selected}}</p>
+        </div>
+        <div>
+          <section class="example-section">
+            <mat-checkbox class="example-margin" >Remamber Me</mat-checkbox>
+          </section>
+        </div>
+        <div>
+          <button mat-raised-button color="primary" (click)="login()">Login</button>
+        </div>
+      </form>
 
-    </form>
+    </div>
+    
   </div>
-  <div>
+  <div class="prelogin-footer"><!-- footer div -->
     <app-footer></app-footer>
   </div>
 </div>

@@ -13,6 +13,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatTableModule} from '@angular/material/table';
 import {MatSelectModule} from '@angular/material/select';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatIconModule,
     MatMenuModule,
     MatTableModule,
+    MatCheckboxModule,
     MatSelectModule
   ],
   exports: [
@@ -46,6 +48,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatIconModule,
     MatMenuModule,
     MatTableModule,
+    MatCheckboxModule,
     MatSelectModule
   ]
 })

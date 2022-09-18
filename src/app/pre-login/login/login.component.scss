@@ -1,0 +1,48 @@
+.prelogin-header{
+    background: cadetblue;
+    color: white;
+    width: 100%;
+    
+}
+
+.prelogin-footer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%
+}
+
+.centre-left-div {    
+    width: 80%;    
+   
+    align-content: flex-start;
+    align-items: center;
+}
+
+.centre-img { 
+    background-image: url('../../../assets/image/Bryant-Denny.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.content {   
+    background-color: aliceblue;
+    flex-direction: column; 
+    margin: 58px;
+    padding: 10px;
+    align-content: space-around;
+    align-items: flex-start;
+         
+}
+
+.example-margin {
+    margin:10px;
+  }
+
+/* Avatar image */
+.avatar {
+    width: 150px;
+    border-radius: 150px;
+    align-content: center;
+    align-items: center;
+}
